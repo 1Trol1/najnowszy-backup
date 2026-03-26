@@ -1,0 +1,2 @@
+gcc -ffreestanding -fno-stack-protector -mno-red-zone -c kernel.c -o kernel.o
+ld -nostdlib -z notext -T linker.ld -o kernel.elf kernel.o
